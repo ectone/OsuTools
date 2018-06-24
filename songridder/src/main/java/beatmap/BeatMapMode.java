@@ -12,7 +12,12 @@ public enum BeatMapMode {
         value = newValue;
     }
 
-    public String getValue() {
-        return value;
+    public static BeatMapMode fromString(final String value) {
+        BeatMapMode beatMapMode = null;
+        for (final BeatMapMode mode : BeatMapMode.values()) {
+            if (mode.value.equals(value))
+                beatMapMode = mode;
+        }
+        return beatMapMode;
     }
 }
