@@ -1,4 +1,4 @@
-package beatmap;
+package model.beatmap;
 
 import java.nio.file.Path;
 
@@ -8,20 +8,23 @@ public class BeatMap {
     private BeatMapMode mode;
     private Double odDifficulty;
     private String beatMapId;
+    private String beatMapSetId;
     private Path folder;
 
-    public BeatMap(
+    BeatMap(
             final String name,
             final String artist,
             final BeatMapMode mode,
             final Double difficulty,
             final String beatMapId,
+            final String beatmapSetId,
             final Path folder) {
         this.name = name;
         this.artist = artist;
         this.mode = mode;
         this.odDifficulty = difficulty;
         this.beatMapId = beatMapId;
+        this.beatMapSetId = beatmapSetId;
         this.folder = folder;
     }
 
@@ -43,6 +46,10 @@ public class BeatMap {
 
     public String getBeatMapId() {
         return beatMapId;
+    }
+
+    public String getBeatMapSetId() {
+        return beatMapSetId;
     }
 
     public Path getFolder() {

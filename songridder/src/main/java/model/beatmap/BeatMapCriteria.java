@@ -1,4 +1,4 @@
-package beatmap;
+package model.beatmap;
 
 import java.util.Optional;
 

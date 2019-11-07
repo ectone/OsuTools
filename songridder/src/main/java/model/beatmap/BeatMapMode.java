@@ -1,4 +1,4 @@
-package beatmap;
+package model.beatmap;
 
 public enum BeatMapMode {
     STANDARD("0"),
